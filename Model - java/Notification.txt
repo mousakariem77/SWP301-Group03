@@ -1,0 +1,80 @@
+import java.util.Date;
+
+public class Notification {
+    private int notificationID;
+    private String receiverID;
+    private String receiverType;
+    private String messageType;
+    private String message;
+    private Date sentDate;
+    private boolean isRead;
+
+    // Constructor
+    public Notification(int notificationID, String receiverID, String receiverType,
+                        String messageType, String message, Date sentDate, boolean isRead) {
+        this.notificationID = notificationID;
+        this.receiverID = receiverID;
+        this.receiverType = receiverType;
+        this.messageType = messageType;
+        this.message = message;
+        this.sentDate = sentDate;
+        this.isRead = isRead;
+    }
+
+    // Getters and Setters
+    public int getNotificationID() {
+        return notificationID;
+    }
+
+    public void setNotificationID(int notificationID) {
+        this.notificationID = notificationID;
+    }
+
+    public String getReceiverID() {
+        return receiverID;
+    }
+
+    public void setReceiverID(String receiverID) {
+        this.receiverID = receiverID;
+    }
+
+    public String getReceiverType() {
+        return receiverType;
+    }
+
+    public void setReceiverType(String receiverType) {
+        this.receiverType = receiverType;
+    }
+
+    public String getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public Date getSentDate() {
+        return sentDate;
+    }
+
+    public void setSentDate(Date sentDate) {
+        this.sentDate = sentDate;
+    }
+
+    public boolean isRead() {
+        return isRead;
+    }
+
+    public void setRead(boolean isRead) {
+        this.isRead = isRead;
+    }
+}

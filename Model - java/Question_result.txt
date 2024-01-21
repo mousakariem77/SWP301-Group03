@@ -1,0 +1,101 @@
+import java.util.Date;
+
+public class QuestionResult {
+    private int questionResultID;
+    private String lessonID;
+    private int lessonProgressID;
+    private int numberOfCorrectAnswer;
+    private int numberOfQuestion;
+    private int mark;
+    private boolean finished;
+    private Date start_at;
+    private Date end_at;
+
+    // Constructor
+    public QuestionResult(int questionResultID, String lessonID, int lessonProgressID,
+                          int numberOfCorrectAnswer, int numberOfQuestion, int mark,
+                          boolean finished, Date start_at, Date end_at) {
+        this.questionResultID = questionResultID;
+        this.lessonID = lessonID;
+        this.lessonProgressID = lessonProgressID;
+        this.numberOfCorrectAnswer = numberOfCorrectAnswer;
+        this.numberOfQuestion = numberOfQuestion;
+        this.mark = mark;
+        this.finished = finished;
+        this.start_at = start_at;
+        this.end_at = end_at;
+    }
+
+    // Getters and Setters
+    public int getQuestionResultID() {
+        return questionResultID;
+    }
+
+    public void setQuestionResultID(int questionResultID) {
+        this.questionResultID = questionResultID;
+    }
+
+    public String getLessonID() {
+        return lessonID;
+    }
+
+    public void setLessonID(String lessonID) {
+        this.lessonID = lessonID;
+    }
+
+    public int getLessonProgressID() {
+        return lessonProgressID;
+    }
+
+    public void setLessonProgressID(int lessonProgressID) {
+        this.lessonProgressID = lessonProgressID;
+    }
+
+    public int getNumberOfCorrectAnswer() {
+        return numberOfCorrectAnswer;
+    }
+
+    public void setNumberOfCorrectAnswer(int numberOfCorrectAnswer) {
+        this.numberOfCorrectAnswer = numberOfCorrectAnswer;
+    }
+
+    public int getNumberOfQuestion() {
+        return numberOfQuestion;
+    }
+
+    public void setNumberOfQuestion(int numberOfQuestion) {
+        this.numberOfQuestion = numberOfQuestion;
+    }
+
+    public int getMark() {
+        return mark;
+    }
+
+    public void setMark(int mark) {
+        this.mark = mark;
+    }
+
+    public boolean isFinished() {
+        return finished;
+    }
+
+    public void setFinished(boolean finished) {
+        this.finished = finished;
+    }
+
+    public Date getStart_at() {
+        return start_at;
+    }
+
+    public void setStart_at(Date start_at) {
+        this.start_at = start_at;
+    }
+
+    public Date getEnd_at() {
+        return end_at;
+    }
+
+    public void setEnd_at(Date end_at) {
+        this.end_at = end_at;
+    }
+}

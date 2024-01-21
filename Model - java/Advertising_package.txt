@@ -1,0 +1,70 @@
+import java.util.Date;
+
+public class AdvertisingPackage {
+    private int packageID;
+    private String instructorID;
+    private Date startDate;
+    private Date endDate;
+    private double price;
+    private int status;
+
+    // Constructor
+    public AdvertisingPackage(int packageID, String instructorID, Date startDate, Date endDate,
+                              double price, int status) {
+        this.packageID = packageID;
+        this.instructorID = instructorID;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.price = price;
+        this.status = status;
+    }
+
+    // Getters and Setters
+    public int getPackageID() {
+        return packageID;
+    }
+
+    public void setPackageID(int packageID) {
+        this.packageID = packageID;
+    }
+
+    public String getInstructorID() {
+        return instructorID;
+    }
+
+    public void setInstructorID(String instructorID) {
+        this.instructorID = instructorID;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+}

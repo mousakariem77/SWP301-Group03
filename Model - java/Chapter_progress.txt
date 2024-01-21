@@ -1,0 +1,80 @@
+import java.util.Date;
+
+public class ChapterProgress {
+    private int chapterProgressID;
+    private String chapterID;
+    private int courseProgressID;
+    private int progress_percent;
+    private boolean completed;
+    private int total_time;
+    private Date start_at;
+
+    // Constructor
+    public ChapterProgress(int chapterProgressID, String chapterID, int courseProgressID,
+                           int progress_percent, boolean completed, int total_time, Date start_at) {
+        this.chapterProgressID = chapterProgressID;
+        this.chapterID = chapterID;
+        this.courseProgressID = courseProgressID;
+        this.progress_percent = progress_percent;
+        this.completed = completed;
+        this.total_time = total_time;
+        this.start_at = start_at;
+    }
+
+    // Getters and Setters
+    public int getChapterProgressID() {
+        return chapterProgressID;
+    }
+
+    public void setChapterProgressID(int chapterProgressID) {
+        this.chapterProgressID = chapterProgressID;
+    }
+
+    public String getChapterID() {
+        return chapterID;
+    }
+
+    public void setChapterID(String chapterID) {
+        this.chapterID = chapterID;
+    }
+
+    public int getCourseProgressID() {
+        return courseProgressID;
+    }
+
+    public void setCourseProgressID(int courseProgressID) {
+        this.courseProgressID = courseProgressID;
+    }
+
+    public int getProgress_percent() {
+        return progress_percent;
+    }
+
+    public void setProgress_percent(int progress_percent) {
+        this.progress_percent = progress_percent;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
+
+    public int getTotal_time() {
+        return total_time;
+    }
+
+    public void setTotal_time(int total_time) {
+        this.total_time = total_time;
+    }
+
+    public Date getStart_at() {
+        return start_at;
+    }
+
+    public void setStart_at(Date start_at) {
+        this.start_at = start_at;
+    }
+}

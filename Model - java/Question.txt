@@ -1,0 +1,90 @@
+import java.util.Date;
+
+public class Question {
+    private int questionID;
+    private String lessonID;
+    private Date startTime;
+    private Date endTime;
+    private int index;
+    private String content;
+    private int type;
+    private int mark;
+
+    // Constructor
+    public Question(int questionID, String lessonID, Date startTime, Date endTime,
+                    int index, String content, int type, int mark) {
+        this.questionID = questionID;
+        this.lessonID = lessonID;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.index = index;
+        this.content = content;
+        this.type = type;
+        this.mark = mark;
+    }
+
+    // Getters and Setters
+    public int getQuestionID() {
+        return questionID;
+    }
+
+    public void setQuestionID(int questionID) {
+        this.questionID = questionID;
+    }
+
+    public String getLessonID() {
+        return lessonID;
+    }
+
+    public void setLessonID(String lessonID) {
+        this.lessonID = lessonID;
+    }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public int getMark() {
+        return mark;
+    }
+
+    public void setMark(int mark) {
+        this.mark = mark;
+    }
+}

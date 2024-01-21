@@ -1,0 +1,70 @@
+import java.util.Date;
+
+public class ReceiverMessages {
+    private int messageID;
+    private String userID;
+    private String messageType;
+    private String messageText;
+    private Date sentDate;
+    private boolean isRead;
+
+    // Constructor
+    public ReceiverMessages(int messageID, String userID, String messageType, String messageText,
+                             Date sentDate, boolean isRead) {
+        this.messageID = messageID;
+        this.userID = userID;
+        this.messageType = messageType;
+        this.messageText = messageText;
+        this.sentDate = sentDate;
+        this.isRead = isRead;
+    }
+
+    // Getters and Setters
+    public int getMessageID() {
+        return messageID;
+    }
+
+    public void setMessageID(int messageID) {
+        this.messageID = messageID;
+    }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    public String getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
+    }
+
+    public String getMessageText() {
+        return messageText;
+    }
+
+    public void setMessageText(String messageText) {
+        this.messageText = messageText;
+    }
+
+    public Date getSentDate() {
+        return sentDate;
+    }
+
+    public void setSentDate(Date sentDate) {
+        this.sentDate = sentDate;
+    }
+
+    public boolean isRead() {
+        return isRead;
+    }
+
+    public void setRead(boolean read) {
+        isRead = read;
+    }
+}

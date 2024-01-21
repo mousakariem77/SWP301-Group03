@@ -1,0 +1,90 @@
+import java.util.Date;
+
+public class DiscountCode {
+    private String discountCodeID;
+    private String instructorID;
+    private String courseID;
+    private String code;
+    private int percentDiscount;
+    private Date startAt;
+    private Date endAt;
+    private boolean isActive;
+
+    // Constructor
+    public DiscountCode(String discountCodeID, String instructorID, String courseID,
+                        String code, int percentDiscount, Date startAt, Date endAt, boolean isActive) {
+        this.discountCodeID = discountCodeID;
+        this.instructorID = instructorID;
+        this.courseID = courseID;
+        this.code = code;
+        this.percentDiscount = percentDiscount;
+        this.startAt = startAt;
+        this.endAt = endAt;
+        this.isActive = isActive;
+    }
+
+    // Getters and Setters
+    public String getDiscountCodeID() {
+        return discountCodeID;
+    }
+
+    public void setDiscountCodeID(String discountCodeID) {
+        this.discountCodeID = discountCodeID;
+    }
+
+    public String getInstructorID() {
+        return instructorID;
+    }
+
+    public void setInstructorID(String instructorID) {
+        this.instructorID = instructorID;
+    }
+
+    public String getCourseID() {
+        return courseID;
+    }
+
+    public void setCourseID(String courseID) {
+        this.courseID = courseID;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public int getPercentDiscount() {
+        return percentDiscount;
+    }
+
+    public void setPercentDiscount(int percentDiscount) {
+        this.percentDiscount = percentDiscount;
+    }
+
+    public Date getStartAt() {
+        return startAt;
+    }
+
+    public void setStartAt(Date startAt) {
+        this.startAt = startAt;
+    }
+
+    public Date getEndAt() {
+        return endAt;
+    }
+
+    public void setEndAt(Date endAt) {
+        this.endAt = endAt;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean isActive) {
+        this.isActive = isActive;
+    }
+}

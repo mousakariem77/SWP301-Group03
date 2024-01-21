@@ -1,0 +1,111 @@
+import java.util.Date;
+
+public class CourseProgress {
+    private int courseProgressID;
+    private String learnerID;
+    private String courseID;
+    private boolean enrolled;
+    private boolean completed;
+    private int progress_percent;
+    private boolean rated;
+    private int rating;
+    private int total_time;
+    private Date start_at;
+
+    // Constructor
+    public CourseProgress(int courseProgressID, String learnerID, String courseID,
+                          boolean enrolled, boolean completed, int progress_percent,
+                          boolean rated, int rating, int total_time, Date start_at) {
+        this.courseProgressID = courseProgressID;
+        this.learnerID = learnerID;
+        this.courseID = courseID;
+        this.enrolled = enrolled;
+        this.completed = completed;
+        this.progress_percent = progress_percent;
+        this.rated = rated;
+        this.rating = rating;
+        this.total_time = total_time;
+        this.start_at = start_at;
+    }
+
+    // Getters and Setters
+    public int getCourseProgressID() {
+        return courseProgressID;
+    }
+
+    public void setCourseProgressID(int courseProgressID) {
+        this.courseProgressID = courseProgressID;
+    }
+
+    public String getLearnerID() {
+        return learnerID;
+    }
+
+    public void setLearnerID(String learnerID) {
+        this.learnerID = learnerID;
+    }
+
+    public String getCourseID() {
+        return courseID;
+    }
+
+    public void setCourseID(String courseID) {
+        this.courseID = courseID;
+    }
+
+    public boolean isEnrolled() {
+        return enrolled;
+    }
+
+    public void setEnrolled(boolean enrolled) {
+        this.enrolled = enrolled;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
+
+    public int getProgress_percent() {
+        return progress_percent;
+    }
+
+    public void setProgress_percent(int progress_percent) {
+        this.progress_percent = progress_percent;
+    }
+
+    public boolean isRated() {
+        return rated;
+    }
+
+    public void setRated(boolean rated) {
+        this.rated = rated;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public int getTotal_time() {
+        return total_time;
+    }
+
+    public void setTotal_time(int total_time) {
+        this.total_time = total_time;
+    }
+
+    public Date getStart_at() {
+        return start_at;
+    }
+
+    public void setStart_at(Date start_at) {
+        this.start_at = start_at;
+    }
+}

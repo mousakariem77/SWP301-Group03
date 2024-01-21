@@ -1,0 +1,39 @@
+import java.math.BigDecimal;
+
+public class Learner {
+    private String learnerID;
+    private BigDecimal wallet;
+    private int status;
+
+    // Constructor
+    public Learner(String learnerID, BigDecimal wallet, int status) {
+        this.learnerID = learnerID;
+        this.wallet = wallet;
+        this.status = status;
+    }
+
+    // Getters and Setters
+    public String getLearnerID() {
+        return learnerID;
+    }
+
+    public void setLearnerID(String learnerID) {
+        this.learnerID = learnerID;
+    }
+
+    public BigDecimal getWallet() {
+        return wallet;
+    }
+
+    public void setWallet(BigDecimal wallet) {
+        this.wallet = wallet;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+}

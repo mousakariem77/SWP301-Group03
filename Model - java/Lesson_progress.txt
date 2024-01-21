@@ -1,0 +1,70 @@
+import java.util.Date;
+
+public class LessonProgress {
+    private int lessonProgressID;
+    private String lessonID;
+    private int chapterProgressID;
+    private int progress_percent;
+    private boolean completed;
+    private Date start_at;
+
+    // Constructor
+    public LessonProgress(int lessonProgressID, String lessonID, int chapterProgressID,
+                          int progress_percent, boolean completed, Date start_at) {
+        this.lessonProgressID = lessonProgressID;
+        this.lessonID = lessonID;
+        this.chapterProgressID = chapterProgressID;
+        this.progress_percent = progress_percent;
+        this.completed = completed;
+        this.start_at = start_at;
+    }
+
+    // Getters and Setters
+    public int getLessonProgressID() {
+        return lessonProgressID;
+    }
+
+    public void setLessonProgressID(int lessonProgressID) {
+        this.lessonProgressID = lessonProgressID;
+    }
+
+    public String getLessonID() {
+        return lessonID;
+    }
+
+    public void setLessonID(String lessonID) {
+        this.lessonID = lessonID;
+    }
+
+    public int getChapterProgressID() {
+        return chapterProgressID;
+    }
+
+    public void setChapterProgressID(int chapterProgressID) {
+        this.chapterProgressID = chapterProgressID;
+    }
+
+    public int getProgress_percent() {
+        return progress_percent;
+    }
+
+    public void setProgress_percent(int progress_percent) {
+        this.progress_percent = progress_percent;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
+
+    public Date getStart_at() {
+        return start_at;
+    }
+
+    public void setStart_at(Date start_at) {
+        this.start_at = start_at;
+    }
+}

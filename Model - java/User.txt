@@ -1,0 +1,151 @@
+import java.util.Date;
+
+public class User {
+    private String userID;
+    private String first_name;
+    private String last_name;
+    private String gender;
+    private Date birthday;
+    private String phoneNumber;
+    private String email;
+    private boolean email_verified;
+    private String country;
+    private String role;
+    private String username;
+    private String password;
+    private String picture;
+    private Date registration_Date;
+
+    // Constructor
+    public User(String userID, String first_name, String last_name, String gender, Date birthday,
+                String phoneNumber, String email, boolean email_verified, String country, String role,
+                String username, String password, String picture, Date registration_Date) {
+        this.userID = userID;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.gender = gender;
+        this.birthday = birthday;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.email_verified = email_verified;
+        this.country = country;
+        this.role = role;
+        this.username = username;
+        this.password = password;
+        this.picture = picture;
+        this.registration_Date = registration_Date;
+    }
+
+    // Getters and Setters
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    public String getFirst_name() {
+        return first_name;
+    }
+
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
+    }
+
+    public String getLast_name() {
+        return last_name;
+    }
+
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public boolean isEmail_verified() {
+        return email_verified;
+    }
+
+    public void setEmail_verified(boolean email_verified) {
+        this.email_verified = email_verified;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
+    public Date getRegistration_Date() {
+        return registration_Date;
+    }
+
+    public void setRegistration_Date(Date registration_Date) {
+        this.registration_Date = registration_Date;
+    }
+}

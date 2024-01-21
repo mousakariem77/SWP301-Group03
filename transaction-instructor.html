@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html
+    lang="en" data-bs-theme="dark"
+    class="light-style layout-menu-fixed layout-compact"
+    dir="ltr"
+    data-theme="theme-default"
+    data-assets-path="../assets/"
+    data-template="vertical-menu-template-free">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport"/>
+      <title>Transaction</title>
+      <meta name="description" content="" />
+  
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="../assets/img/favicon/icon.ico" />
+  
+      <!-- Fonts -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+  
+      <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+  
+      <!-- Core CSS -->
+      <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+      <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+      
+      <!-- Vendors CSS -->
+      <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+      <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+  
+      <script src="../assets/js/config.js"></script>
+    </head>
+
+    <body onload="time()">
+        <!-- Layout wrapper -->
+        <div class="layout-wrapper layout-content-navbar">
+            <div class="layout-container">
+                <!-- Menu -->
+
+                <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme bg-theme">
+                    <div class="app-brand demo">
+                      <a href="#" class="text-decoration-none d-block">
+                        <h2 class="m-0 fw-bold"><span class="text-primary">W3</span>COURSE</h2>
+                      </a>
+          
+                      <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-theme text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                      </a>
+                    </div>
+          
+                    <div class="menu-inner-shadow"></div>
+          
+                    <ul class="menu-inner py-1">
+                      <!-- Dashboards -->
+                      <li class="menu-item">
+                        <a
+                          href="dashboard.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                          <div>Dashboards</div>
+                        </a>
+                      </li>
+          
+                      <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Apps &amp; Pages</span>
+                      </li>
+                      <!-- Apps -->
+                      <li class="menu-item">
+                        <a
+                          href="instructor.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-user-voice"></i>
+                          <div>Instructor</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="learner.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-group"></i>
+                          <div>Learner</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="course.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-book"></i>
+                          <div>Course</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-bell"></i>
+                          <div>Notification</div>
+                        </a>
+                      </li>
+                      <li class="menu-item active">
+                        <a
+                            href="javascript:void(0);"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-wallet"></i>
+                          <div>Transaction</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-envelope"></i>
+                          <div>Email</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-chat.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-chat"></i>
+                          <div>Chat</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-calendar.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-calendar"></i>
+                          <div data-i18n="Calendar">Calendar</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-kanban.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-grid"></i>
+                          <div>Kanban</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link text-theme menu-toggle">
+                          <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                          <div>Authentications</div>
+                        </a>
+                        <ul class="menu-sub">
+                          <li class="menu-item">
+                            <a href="auth-login-basic.html" class="menu-link text-theme" target="_blank">
+                              <div>Change Password</div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+          
+                      <!-- Forms & Tables -->
+                      <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li>
+                      <!-- Form Validation -->
+                      <li class="menu-item">
+                        <a
+                          href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/form-validation.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-list-check"></i>
+                          <div>Form Validation</div>
+                        </a>
+                      </li>
+                      <!-- Data Tables -->
+                      <li class="menu-item">
+                        <a
+                          href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/tables-datatables-basic.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-grid"></i>
+                          <div>Datatables</div>
+                        </a>
+                      </li>
+                      <!-- Misc -->
+                      <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
+                      <li class="menu-item">
+                        <a
+                          href="support.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-support"></i>
+                          <div>Support</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a
+                          href="setting.html"
+                          class="menu-link text-theme">
+                          <i class="menu-icon tf-icons bx bx-cog"></i>
+                          <div>Setting</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </aside>
+                <!-- / Menu -->
+
+                <!-- Layout container -->
+                <div class="layout-page layout-theme">
+                    <!-- Navbar -->
+                    <nav class="bg-theme layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center">
+                        <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                            <h5 class="card-title mb-0 text-theme">List of Transaction</h5>
+                            <ul class="navbar-nav flex-row align-items-center ms-auto">
+                                <li class="nav-item lh-1 me-3">
+                                    <div id="clock" class="text-theme"></div>
+                                </li>
+            
+                                <li class="nav-item lh-1 me-3">
+                                    <a href="#" class="icon-taskbar theme-toggle">
+                                        <i class='bx bx-sun text-theme' title="Light Mode"></i>
+                                        <i class='bx bx-moon text-theme'title="Dark Mode"></i>
+                                    </a>
+                                </li>
+            
+                                <li class="nav-item lh-1 me-3">
+                                    <a class="notifi-icon">
+                                        <i class="tf-icons bx bx-bell text-theme"></i>
+                                        <div class="badge bg-danger rounded-pill">5</div>
+                                    </a>
+                                </li>
+                                <!-- User -->
+                                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                    <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                        <div class="avatar avatar-online">
+                                            <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                        </div>
+                                    </a>
+                                    <ul class="bg-theme dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 text-theme">
+                                                        <span class="fw-medium d-block">John Doe</span>
+                                                        <small class="text-muted">Admin</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item text-theme" href="#">
+                                                <i class="bx bx-user me-2"></i>
+                                                <span class="align-middle">My Profile</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item text-theme" href="setting.html">
+                                                <i class="bx bx-cog me-2"></i>
+                                                <span class="align-middle">Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item text-theme" href="billing.html">
+                                                <span class="d-flex align-items-center align-middle">
+                                                    <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                                                    <span class="flex-grow-1 align-middle ms-1">Billing</span>
+                                                    <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item text-theme" href="loginAdmin.html">
+                                                <i class="bx bx-power-off me-2"></i>
+                                                <span class="align-middle">Log Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--/ User -->
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="container mt-3 mb-3">
+                        <!-- / Navbar -->
+                        <div class="card bg-theme">
+                            <div class="card-datatable table-responsive mt-5">
+                                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-8">
+                                            <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="transaction.html"
+                                                    ><i class='bx bx-money'></i>&nbsp;All Transaction</a
+                                                  >
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="transaction-learner.html"
+                                                    ><i class="bx bxs-group"></i>&nbsp;Learner</a
+                                                  >
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link active" href="javascript:void(0);"
+                                                    ><i class='bx bxs-user-voice'></i>&nbsp;Instructor</a
+                                                  >
+                                                </li>
+                                              </ul>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="dataTables_filter d-flex text-theme">
+                                                <label>Search:</label>
+                                                <input type="search" class="form-control" placeholder="">
+                                                <button class="btn btn-outline-primary text-theme" type="button"><i class='bx bx-search-alt-2'></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="datatables-basic table mb-5 mt-5">
+                                        <thead>
+                                            <tr>
+                                                <th width="10"><input type="checkbox" id="all"></th>
+                                                <th width="50" class="text-theme">Name</th>
+                                                <th width="150" class="text-theme">Email</th>
+                                                <th width="50" class="text-theme">Date</th>
+                                                <th width="120" class="text-theme">Email</th>
+                                                <th width="70" class="text-theme">Status</th>
+                                                <th width="70" class="text-theme">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="">
+                                                <td class="  dt-checkboxes-cell">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-start align-items-center user-name">
+                                                        <div class="avatar-wrapper">
+                                                            <div class="avatar me-2">
+                                                                <span class="avatar-initial rounded-circle bg-label-warning">GG</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="emp_name text-truncate">Glyn Giacoppo</span>
+                                                            <small class="emp_post text-truncate text-muted">Software Test Engineer</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>ggiacoppo2r@apache.org</td>
+                                                <td>04/15/2021</td>
+                                                <td>$24973.48</td>
+                                                <td>
+                                                    <span class="badge  bg-label-success">Complete</span>
+                                                </td>
+                                                <td>
+                                                  <div class="d-inline-block">
+                                                      <a class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                          <i class="bx bx-dots-vertical-rounded"></i>
+                                                      </a>
+                                                      <ul class="dropdown-menu dropdown-menu-end m-0 bg-theme">
+                                                          <li>
+                                                              <a href="transaction-detail.html" class="dropdown-item text-theme">
+                                                                <i class='bx bxs-detail'></i>
+                                                                Details</a>
+                                                          </li>
+                                                          <li>
+                                                            <a href="#" class="dropdown-item text-theme">
+                                                              <i class='bx bx-trash'></i>
+                                                              Delete</a>
+                                                        </li>
+                                                      </ul>
+                                                  </div>
+                                                  <a class="btn btn-sm btn-icon item-edit" title="Edit" 
+                                                  data-bs-toggle="modal" data-bs-target="#edit"><i class="bx bxs-edit"></i></a>
+                                              </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="dataTables_info text-theme" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 7 of 100 entries</div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 d-flex justify-content-md-end">
+                                            <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                                                <ul class="pagination">
+                                                    <li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous">
+                                                        <a aria-controls="DataTables_Table_0" aria-disabled="true" role="link" data-dt-idx="previous" tabindex="0" class="page-link">Previous</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item active">
+                                                        <a href="#" aria-controls="DataTables_Table_0" role="link" aria-current="page" data-dt-idx="0" tabindex="0" class="page-link">1</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item ">
+                                                        <a href="#" aria-controls="DataTables_Table_0" role="link" data-dt-idx="1" tabindex="0" class="page-link">2</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item ">
+                                                        <a href="#" aria-controls="DataTables_Table_0" role="link" data-dt-idx="2" tabindex="0" class="page-link">3</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item ">
+                                                        <a href="#" aria-controls="DataTables_Table_0" role="link" data-dt-idx="3" tabindex="0" class="page-link">4</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item ">
+                                                        <a href="#" aria-controls="DataTables_Table_0" role="link" data-dt-idx="4" tabindex="0" class="page-link">5</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item disabled" id="DataTables_Table_0_ellipsis">
+                                                        <a aria-controls="DataTables_Table_0" aria-disabled="true" role="link" data-dt-idx="ellipsis" tabindex="0" class="page-link">…</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item ">
+                                                        <a href="#" aria-controls="DataTables_Table_0" role="link" data-dt-idx="14" tabindex="0" class="page-link">15</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item next" id="DataTables_Table_0_next">
+                                                        <a href="#" aria-controls="DataTables_Table_0" role="link" data-dt-idx="next" tabindex="0" class="page-link">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Footer -->
+                    <footer class="content-footer footer container">
+                        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column bg-dark">
+                            <div class="mb-2 mb-md-0">
+                                ©2024, project of group 3
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- / Footer -->
+                </div>
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
+
+        <!-- Overlay -->
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/dashboards-analytics.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

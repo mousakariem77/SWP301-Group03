@@ -1,0 +1,91 @@
+import java.util.Date;
+
+public class Transaction {
+    private int transactionID;
+    private String learnerID;
+    private String courseID;
+    private Date enrollmentDate;
+    private double originPrice;
+    private double price;
+    private String description;
+    private int status;
+
+    // Constructor
+    public Transaction(int transactionID, String learnerID, String courseID,
+                       Date enrollmentDate, double originPrice, double price,
+                       String description, int status) {
+        this.transactionID = transactionID;
+        this.learnerID = learnerID;
+        this.courseID = courseID;
+        this.enrollmentDate = enrollmentDate;
+        this.originPrice = originPrice;
+        this.price = price;
+        this.description = description;
+        this.status = status;
+    }
+
+    // Getters and Setters
+    public int getTransactionID() {
+        return transactionID;
+    }
+
+    public void setTransactionID(int transactionID) {
+        this.transactionID = transactionID;
+    }
+
+    public String getLearnerID() {
+        return learnerID;
+    }
+
+    public void setLearnerID(String learnerID) {
+        this.learnerID = learnerID;
+    }
+
+    public String getCourseID() {
+        return courseID;
+    }
+
+    public void setCourseID(String courseID) {
+        this.courseID = courseID;
+    }
+
+    public Date getEnrollmentDate() {
+        return enrollmentDate;
+    }
+
+    public void setEnrollmentDate(Date enrollmentDate) {
+        this.enrollmentDate = enrollmentDate;
+    }
+
+    public double getOriginPrice() {
+        return originPrice;
+    }
+
+    public void setOriginPrice(double originPrice) {
+        this.originPrice = originPrice;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+}

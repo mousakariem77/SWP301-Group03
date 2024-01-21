@@ -1,0 +1,39 @@
+import java.math.BigDecimal;
+
+public class Instructor {
+    private String instructorID;
+    private BigDecimal income;
+    private int status;
+
+    // Constructor
+    public Instructor(String instructorID, BigDecimal income, int status) {
+        this.instructorID = instructorID;
+        this.income = income;
+        this.status = status;
+    }
+
+    // Getters and Setters
+    public String getInstructorID() {
+        return instructorID;
+    }
+
+    public void setInstructorID(String instructorID) {
+        this.instructorID = instructorID;
+    }
+
+    public BigDecimal getIncome() {
+        return income;
+    }
+
+    public void setIncome(BigDecimal income) {
+        this.income = income;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+}

@@ -1,0 +1,68 @@
+public class Payment {
+    private String paymentID;
+    private String learnerID;
+    private int accountNumber;
+    private String accountName;
+    private String bank;
+    private boolean status;
+
+    // Constructor
+    public Payment(String paymentID, String learnerID, int accountNumber, String accountName,
+                   String bank, boolean status) {
+        this.paymentID = paymentID;
+        this.learnerID = learnerID;
+        this.accountNumber = accountNumber;
+        this.accountName = accountName;
+        this.bank = bank;
+        this.status = status;
+    }
+
+    // Getters and Setters
+    public String getPaymentID() {
+        return paymentID;
+    }
+
+    public void setPaymentID(String paymentID) {
+        this.paymentID = paymentID;
+    }
+
+    public String getLearnerID() {
+        return learnerID;
+    }
+
+    public void setLearnerID(String learnerID) {
+        this.learnerID = learnerID;
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAccountName() {
+        return accountName;
+    }
+
+    public void setAccountName(String accountName) {
+        this.accountName = accountName;
+    }
+
+    public String getBank() {
+        return bank;
+    }
+
+    public void setBank(String bank) {
+        this.bank = bank;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+}

@@ -1,0 +1,68 @@
+public class Chapter {
+    private String chapterID;
+    private String courseID;
+    private String chapter_name;
+    private int index;
+    private String description;
+    private int total_time;
+
+    // Constructor
+    public Chapter(String chapterID, String courseID, String chapter_name, int index,
+                   String description, int total_time) {
+        this.chapterID = chapterID;
+        this.courseID = courseID;
+        this.chapter_name = chapter_name;
+        this.index = index;
+        this.description = description;
+        this.total_time = total_time;
+    }
+
+    // Getters and Setters
+    public String getChapterID() {
+        return chapterID;
+    }
+
+    public void setChapterID(String chapterID) {
+        this.chapterID = chapterID;
+    }
+
+    public String getCourseID() {
+        return courseID;
+    }
+
+    public void setCourseID(String courseID) {
+        this.courseID = courseID;
+    }
+
+    public String getChapter_name() {
+        return chapter_name;
+    }
+
+    public void setChapter_name(String chapter_name) {
+        this.chapter_name = chapter_name;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getTotal_time() {
+        return total_time;
+    }
+
+    public void setTotal_time(int total_time) {
+        this.total_time = total_time;
+    }
+}
