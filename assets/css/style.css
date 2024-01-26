@@ -528,6 +528,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  filter: drop-shadow(1px 1px 30px #b5b5b5);
 }
 
 .img-thumbnail {
@@ -9759,9 +9760,13 @@ h6,
   display: none;
   right: 30px;
   bottom: 30px;
+  transition: 0.2s ease-out;
   z-index: 11;
 }
 
+.back-to-top:hover i{
+  transform: translateY(-3px);
+}
 .navbar-light .navbar-nav .nav-link {
   padding: 20px 15px;
   color: #44425A;
@@ -9956,6 +9961,198 @@ h6,
   padding: 0;
   list-style-type: none;
 }
-.addvertising-course{
-  /* height: 100px; */
+.icon-navbar.bx-bell{
+  position: relative;
+}
+p.count {
+  width: 17px;
+  height: 17px;
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--white-color);
+  border-radius: 20px;
+  text-align: center;
+  background-color: red;
+  position: absolute;
+  right: calc(7rem + 6px);
+  top: 17px;
+}
+.dropdown-notifi{
+  width: 350px;
+  max-height: 400px;
+  position: absolute;
+  top: 3.5rem !important;
+  left: -8rem !important;
+  box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.notifi-list-item{
+  padding-left: 0;
+  height: 34vh;
+  overflow-y: auto;
+}
+.notifi-container{
+  color: var(--second-color);
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #7d7c7c;
+}
+.notifi-container .notifi-img{
+  width: 55px;
+  height: 55px;
+  padding: 0 2px;
+}
+.notifi-container .notifi-img img{
+  width: 100%;
+  border-radius: 50%;
+}
+.notifi-info{
+  margin-left: -2.2rem;
+}
+.btn-shown{
+  margin-bottom: 0;
+  width: 100%;
+  font-weight: 700;
+}
+.btn-register{
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: var(--primary);
+}
+.btn-register:hover{
+  color: #000000;
+  background-color: #FFBE92;
+}
+.icon-navbar i{
+  font-size: 1.6rem;
+  margin-top: 8px;
+}
+.avatar-online{
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-top: -5px;
+  position: relative;
+}
+.avatar-online::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 2.6rem;
+  left: 2.2rem;
+  background-color: #71dd37;
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #fff;
+}
+.avatar-online img{
+  width: 100%;
+  cursor: pointer;
+}
+ul.navbar-nav{
+  margin-left: auto;
+}
+.nav-item .dropdown-profile{
+  width: 10rem;
+  top: 4.1rem;
+  left: 9rem;
+}
+.about-img img{
+  filter: drop-shadow(1px 1px 20px #2f2f2f);
+}
+.value-container >.box-value{
+  max-height: 10px !important;
+}
+.value-icon{
+  width: 5rem;
+  height: 5rem;
+}
+.value-icon i{
+  font-size: 4rem;
+  margin: 10px 10px 0 -10px;
+}
+.more-course{
+  margin-top: -20px;
+}
+.more-course a{
+  font-size: .9rem;
+  font-weight: 700;
+}
+.instructor-item{
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+.instructor-item label{
+  width: 200px;
+}
+.instructor-img{
+  width: 100%;
+}
+.erroll-btn{
+  width: 15rem;
+  height: 4rem;
+}
+.erroll-btn h5{
+  font-weight: 700;
+}
+.bird-intro{
+  margin: .1rem 0 0 9rem;
+}
+.bird-intro h6{
+  margin-left: 5rem;
+}
+.box-chaper{
+  cursor: pointer;
+}
+.chapter-list{
+  justify-content: space-between;
+}
+.chapter-item{
+  width: 60rem;
+}
+.chapter-item i{
+  padding-top: 2px;
+}
+.quanity-lesson{
+  margin: auto;
+}
+.lesson-item h6{
+  font-weight: 400;
+}
+.info-title label{
+  padding: 5px;
+  margin-left: -15px;
+}
+.bxs-pencil{
+  cursor: pointer;
+}
+.progess-info{
+  margin-top: -8px;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  border: 2px solid red;
+}
+.progess-info label{
+  font-size: .8rem;
+  margin: 10px 4px;
+}
+.container-create label{
+  font-size: 1rem;
+}
+.container-create textarea,
+.container-create input{
+  color: #000;
+  font-size: 1.1rem;
+  padding: 5px 4px;
+}
+.img-course img{
+  width: 12rem;
+  height: auto;
+  display: none;
+}
+
+.img-course input{
+  display: none;
 }

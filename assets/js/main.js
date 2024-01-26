@@ -1,3 +1,66 @@
+document.addEventListener("DOMContentLoaded", function() {
+  var informationLink = document.querySelector("a[href='#changepass']");
+  var changepassLink = document.querySelector("a[href='#information']");
+  var informationSection = document.getElementById("information");
+  var changepassSection = document.getElementById("changepass");
+
+  // Kiểm tra nếu URL chứa '#information' hoặc '#changepass'
+  if (window.location.href.includes('#information')) {
+      informationLink.classList.add("text-primary");
+      changepassSection.style.display = "none";
+  } else if (window.location.href.includes('#changepass')) {
+      changepassLink.classList.add("text-primary");
+      informationLink.style.color = "";
+  }else{
+      informationLink.classList.add("text-primary");
+      changepassSection.style.display = "none";
+  }
+
+  informationLink.addEventListener("click", function(e) {
+      e.preventDefault();
+      informationSection.style.display = "block";
+      informationLink.classList.add("text-primary");
+      changepassSection.style.display = "none";
+      changepassLink.classList.remove("text-primary");
+      changepassLink.style.color = "";
+      changepassLink.style.fontWeight = "";
+  });
+
+  changepassLink.addEventListener("click", function(e) {
+      e.preventDefault();
+      changepassSection.style.display = "block";
+      changepassLink.classList.add("text-primary");
+      informationSection.style.display = "none";
+      informationLink.classList.remove("text-primary");
+      informationLink.style.color = "";
+      informationLink.style.fontWeight = "";
+  });
+});
+
+// Create picture of Course
+var inputFile = document.getElementById("input-file");
+var updateBtn = document.getElementById("update-btn");
+var coursePic = document.getElementById("course-pic");
+
+updateBtn.addEventListener("click", function() {
+  inputFile.click();
+});
+
+inputFile.addEventListener("change", function() {
+  var file = inputFile.files[0];
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+    coursePic.src = e.target.result;
+    coursePic.style.display = "block";
+    updateBtn.style.marginTop = "10px";
+  };
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+});
+
 /**
  * Main
  */
@@ -67,6 +130,9 @@ function isLight(){
 if(isLight()){
   toggleRootClass();
 }
+
+// Change Infomation
+
 
 'use strict';
 
@@ -205,16 +271,18 @@ let menu, animate;
   
   
   // Back to top button
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-          $('.back-to-top').fadeIn('slow');
-      } else {
-          $('.back-to-top').fadeOut('slow');
-      }
-  });
-  $('.back-to-top').click(function () {
-      $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-      return false;
+  $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('.back-to-top').fadeIn("slow");
+        } else {
+            $('.back-to-top').fadeOut("slow");
+        }
+    });
+    $(".back-to-top").click(function(){
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
   });
 
 

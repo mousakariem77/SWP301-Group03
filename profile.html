@@ -9,7 +9,7 @@ data-template="vertical-menu-template-free">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport"/>
-    <title>W3COURSES - Courses</title>
+    <title>W3COURSES - Profile</title>
     <meta name="description" content="" />
 
     <!-- Favicon -->
@@ -56,7 +56,7 @@ data-template="vertical-menu-template-free">
                             <div class="navbar-nav py-0">
                                 <a href="home.html" class="h3 nav-item nav-link">Home</a>
                                 <a href="about.html" class="h3 nav-item nav-link">About</a>
-                                <a href="javascript:void(0);" class="h3 nav-item nav-link active">Courses</a>
+                                <a href="course-home.html" class="h3 nav-item nav-link">Courses</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="h3 nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                     <div class="dropdown-menu rounded-0 m-0">
@@ -185,162 +185,209 @@ data-template="vertical-menu-template-free">
         </div>
         <!-- Topbar End -->
 
-        <!-- Welcome Start -->
-        <div class="container-fluid py-4" style="background-color: rgb(12, 65, 93);">
-            <div class="container-fluid">
-                <h4 class="text-white ml-4 pt-4">Search for course names online.</h4>
-                <div class="row pb-5 ml-3">
-                    <div class="col-sm-12 col-md-4 mt-3">
-                        <div class="d-flex text-theme">
-                            <input type="search" class="form-control mr-2" placeholder="Search...">
-                            <button class="btn btn-primary" type="button"><i class='bx bx-search-alt-2'></i></button>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2 mt-3">
-                        <select name="" class="form-select bg-white text-dark" aria-placeholder="Status">
-                            <option value="all">All</option>
-                            <option value="active">Enrolled</option>
-                            <option value="block">Unregistered</option>
-                        </select>
+        <!-- Information Start -->
+        <div class="container py-5">
+            <div class="mb-2">
+                <h6 class="text-primary mb-3">
+                    <a href="home.html">Home</a> >
+                    <a href="profile.html">My profile</a>
+                </h6>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="contact-form bg-secondary rounded p-5">
+                        <ul class="navbar-nav list-unstyled" style="margin-top: -30px;">
+                            <li class="nav-item pt-2">
+                                <a class="nav-link " href="#changepass">Information & Contact</a>
+                            </li>
+                            <li class="nav-item pt-2">
+                                <a class="nav-link " href="#information">Change Password</a>
+                            </li>
+                            <li class="nav-item pt-2">
+                                <a class="nav-link text-dark" href="create-course.html">Create Course</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Welcome End -->
+                <div id="information" class="information col-md-9 col-lg-9">
+                    <div class="contact-form bg-secondary rounded p-5">
+                        <h4 class="text-dark" style="margin-top: -20px;">Information</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 col-lg-3">
+                                    <div class="team-item mt-4">
+                                        <div class="team-img">
+                                            <img class="img-fluid rounded-circle" src="assets/img/avatars/instructer/team-1.jpg" alt="">
+                                        </div>
+                                        <button class="btn btn-primary mt-3 ml-3 d-none ">Select photo</button>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-9 col-lg-9">
+                                    <div class="container mt-3">
+                                        <div class="row">
+                                            <div class="info-title col-md-4 col-lg-4 text-dark">
+                                                <label>Full name: <i class="text-danger">*</i></label><br>
+                                                <label>Gender: </label><br>
+                                                <label>Birthday: </label><br>
+                                                <label>Phone number: <i class="text-danger">*</i></label><br>
+                                                <label>Email address: <i class="text-danger">*</i></label><br>
+                                                <label>Country/Region: <i class="text-danger">*</i></label><br>
+                                                <label>Facebook: </label><br>
+                                            </div>
+                                            <div class="info-title col-md-8 col-lg-8 text-dark">
+                                                <div class="d-flex" style="justify-content: space-between;">
+                                                    <label>Huỳnh Nguyên Bảo</label>
+                                                    <i class='bx bxs-pencil text-primary' data-bs-toggle="modal" data-bs-target="#edit"></i><br>
+                                                </div>
+                                                <label>Male</label><br>
+                                                <label>1/1/2003</label><br>
+                                                <label>0835825811</label><br>
+                                                <label>bao123@gmail.com</label><br>
+                                                <label>Vietnam</label><br>
+                                                <label></label><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-dark mt-5 mb-4">Learning outcomes</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="rounded overflow-hidden mb-2 border">
+                                        <img class="img-fluid" src="/assets/img/avatars/course/course-1.jpg" alt="">
+                                        <div class="bg-secondary p-4">
+                                            <a class="h6" href="course-intro.html">Web design & development courses for beginner</a>
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <!-- <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small> -->
+                                                <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5</h6>
+                                                <div class="progess-info"><label>10%</label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="rounded overflow-hidden mb-2 border">
+                                        <img class="img-fluid" src="/assets/img/avatars/course/course-1.jpg" alt="">
+                                        <div class="bg-secondary p-4">
+                                            <a class="h6" href="course-intro.html">Web design & development courses for beginner</a>
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <!-- <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small> -->
+                                                <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5</h6>
+                                                <div class="progess-info"><label>10%</label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="rounded overflow-hidden mb-2 border">
+                                        <img class="img-fluid" src="/assets/img/avatars/course/course-1.jpg" alt="">
+                                        <div class="bg-secondary p-4">
+                                            <a class="h6" href="course-intro.html">Web design & development courses for beginner</a>
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <!-- <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small> -->
+                                                <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5</h6>
+                                                <div class="progess-info"><label>10%</label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Courses Start -->
-        <div class="container-fluid">
-            <div class="container py-5">
-                <div class="text-center mb-5 mt-5">
-                    <h1>Our Popular Courses</h1>
-                </div>
-                <h3 class="text-dark pt-2">Project Manager.</h3>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="/assets/img/avatars/course/course-1.jpg" alt="">
-                            <div class="bg-secondary p-4">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small>
-                                    <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                                </div>
-                                <a class="h5" href="course-intro.html">Web design & development courses for beginner</a>
-                                <div class="border-top mt-4 pt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5 <small>(250)</small>
-                                        </h6>
-                                        <h5 class="m-0">$99</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="/assets/img/avatars/course/course-2.jpg" alt="">
-                            <div class="bg-secondary p-4">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small>
-                                    <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                                </div>
-                                <a class="h5" href="">Web design & development courses for beginner</a>
-                                <div class="border-top mt-4 pt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5 <small>(250)</small>
-                                        </h6>
-                                        <h5 class="m-0">$99</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="/assets/img/avatars/course/course-3.jpg" alt="">
-                            <div class="bg-secondary p-4">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small>
-                                    <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                                </div>
-                                <a class="h5" href="">Web design & development courses for beginner</a>
-                                <div class="border-top mt-4 pt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5 <small>(250)</small>
-                                        </h6>
-                                        <h5 class="m-0">$99</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="demo" class="collapse">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="rounded overflow-hidden mb-2">
-                                    <img class="img-fluid" src="/assets/img/avatars/course/course-4.jpg" alt="">
-                                    <div class="bg-secondary p-4">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small>
-                                            <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                                        </div>
-                                        <a class="h5" href="">Web design & development courses for beginner</a>
-                                        <div class="border-top mt-4 pt-4">
-                                            <div class="d-flex justify-content-between">
-                                                <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5 <small>(250)</small>
-                                                </h6>
-                                                <h5 class="m-0">$99</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="rounded overflow-hidden mb-2">
-                                    <img class="img-fluid" src="/assets/img/avatars/course/course-5.jpg" alt="">
-                                    <div class="bg-secondary p-4">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small>
-                                            <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                                        </div>
-                                        <a class="h5" href="">Web design & development courses for beginner</a>
-                                        <div class="border-top mt-4 pt-4">
-                                            <div class="d-flex justify-content-between">
-                                                <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5 <small>(250)</small>
-                                                </h6>
-                                                <h5 class="m-0">$99</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="rounded overflow-hidden mb-2">
-                                    <img class="img-fluid" src="/assets/img/avatars/course/course-6.jpg" alt="">
-                                    <div class="bg-secondary p-4">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <small class="m-0"><i class="fa fa-users text-dark mr-2"></i>25 Students</small>
-                                            <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
-                                        </div>
-                                        <a class="h5" href="">Web design & development courses for beginner</a>
-                                        <div class="border-top mt-4 pt-4">
-                                            <div class="d-flex justify-content-between">
-                                                <h6 class="m-0"><i class="fa fa-star text-warning mr-2"></i>4.5 <small>(250)</small>
-                                                </h6>
-                                                <h5 class="m-0">$99</h5>
+                <!-- Change Password -->
+                <div id="changepass" class="changepass col-md-9 col-lg-9">
+                    <div class="contact-form bg-secondary rounded p-5">
+                        <h4 class="text-dark" style="margin-top: -20px;">Change password</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-9">
+                                    <div class="container mt-3">
+                                        <div class="row">
+                                            <div class=" col-md-12 col-lg-12 text-dark">
+                                                <form action="" method="">
+                                                    <label class="mt-2">Password:</label><br>
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                    <label class="mt-4">New Password:</label><br>
+                                                    <input type="password" class="form-control" placeholder="New Password">
+                                                    <label class="mt-4">Confirm Password:</label><br>
+                                                    <input type="password" class="form-control" placeholder="Confirm Password">
+                                                    <button class="btn btn-primary mt-3 float-right" type="submit">Change</button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="more-course mb-4">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Show 3 more</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Courses End -->
+        <!-- Information End -->
+
+        <!-- Modal -->
+        <div class="modal fade mt-5" id="edit" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="enrollLabel">Edit infomation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formAccountSettings" method="POST" onsubmit="return false">
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                        <label for="firstName" class="form-label">Full name</label>
+                        <input class="form-control" type="text" id="name" name="name" value="Huỳnh Nguyên Bảo"/>
+                        </div>
+    
+                        <div class="mb-3 col-md-6">
+                        <label for="gender" class="form-label">Gender</label>
+                        <input class="form-control" type="text" name="gender" id="gender" value="Male"/>
+                        </div>
+    
+                        <div class="mb-3 col-md-6">
+                        <label for="birthday" class="form-label">Birthday</label>
+                        <input class="form-control" type="text" name="birthday" id="birthday" value="1/1/2003"/>
+                        </div>
+    
+                        <div class="mb-3 col-md-6">
+                        <label class="form-label" for="phoneNumber">Phone Number</label>
+                        <div class="input-group input-group-merge">
+                            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" value="0835825811"/>
+                        </div>
+                        </div>
+    
+                        <div class="mb-3 col-md-6">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input class="form-control" type="text" id="email" name="email" value="john.doe@example.com" disabled/>
+                        </div>
+    
+                        <div class="mb-3 col-md-6">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="country" name="country" value="Vietnam"/>
+                        </div>
+    
+                        <div class="mb-3 col-md-8">
+                        <label for="registrationDate" class="form-label">Link Facebook</label>
+                        <input class="form-control" type="text" id="facebook" name="facebook" value=""/>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" name="editInstructor">Save</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal -->
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 50px;">
@@ -424,7 +471,7 @@ data-template="vertical-menu-template-free">
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
